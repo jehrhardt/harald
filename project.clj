@@ -8,4 +8,12 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2173" :scope "provided"]]
 
-  :plugins [[org.bodil/lein-noderepl "0.1.11"]])
+  :plugins [[org.bodil/lein-noderepl "0.1.11"]
+            [lein-cljsbuild "1.0.2"]]
+
+  :cljsbuild {:builds [{:id "sensortag"
+                        :source-paths ["src" "examples/sensortag/src"]
+                        :compiler {:output-to "examples/sensortag/main.js"
+                                   :output-dir "examples/sensortag/out"
+                                   :optimizations :simple
+                                   :target :nodejs}}]})

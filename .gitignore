@@ -10,3 +10,6 @@ pom.xml.asc
 
 .idea/*
 *.iml
+
+examples/**/out/*
+examples/**/main.js
