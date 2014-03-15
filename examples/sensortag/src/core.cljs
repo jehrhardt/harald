@@ -1,6 +1,8 @@
 (ns harald.examples.sensortag
   (:require [cljs.nodejs :as nodejs]))
 
+(def bluetooth (nodejs/require "bleno"))
+
 (defn -main [& args]
   (println "Hello SensorTag"))
 
