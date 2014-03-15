@@ -1,10 +1,11 @@
-(ns harald.examples.sensortag
+(ns harald.server
   (:require [cljs.nodejs :as nodejs]))
 
-(def bluetooth (nodejs/require "bleno"))
+(defn greeting []
+  (str "Hello " "from " "harald!"))
 
 (defn -main [& args]
-  (println "Hello SensorTag"))
+  (println (greeting)))
 
 (nodejs/enable-util-print!)
 (set! *main-cli-fn* -main)

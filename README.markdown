@@ -1,7 +1,7 @@
 harald
 ======
 
-ClojureScript library for Bluetooth Low Energy.
+The Bluetooth Low Energy device simulator.
 
 License
 -------
