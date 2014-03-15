@@ -1,4 +1,4 @@
-(defproject harald "0.1.0-SNAPSHOT"
+(defproject harald "0.1.0"
   :description "The Bluetooth Low Energy device simulator"
   :url "https://github.com/jehrhardt/harald"
 
