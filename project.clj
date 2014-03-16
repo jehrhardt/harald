@@ -19,6 +19,4 @@
                         :compiler {:output-to "harald.js"
                                    :pretty-print true
                                    :optimizations :simple
-                                   :target :nodejs}}]}
-
-  :main "harald.js")
+                                   :target :nodejs}}]})
