@@ -3,7 +3,12 @@
             [harald.routes :as routes]))
 
 (defn add-routes [server]
-  (routes/index server))
+  (routes/index server)
+  (routes/advertising server)
+  (routes/services server)
+  (routes/service server)
+  (routes/characteristics server)
+  (routes/characteristic server))
 
 (defn run-server [port]
   (let [restify (nodejs/require "restify")
